@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title id='Description'>
         jqxScheduler Scales Zooming example
     </title>
-	<meta name="description" content="JavaScript Scheduler Zooming example" /> 	
+    <meta name="description" content="JavaScript Scheduler Zooming example" />
 
-     <link rel="stylesheet" href="../../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../jqwidgets/styles/jqx.base.css" type="text/css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" />
     <script type="text/javascript" src="../../../scripts/jquery-1.12.4.min.js"></script>
 
     <script type="text/javascript" src="../../../jqwidgets/jqxcore.js"></script>
@@ -44,7 +45,7 @@
                     { name: 'status', type: 'string' },
                     { name: 'about', type: 'string' },
                     { name: 'address', type: 'string' },
-                    { name: 'company', type: 'string'},
+                    { name: 'company', type: 'string' },
                     { name: 'name', type: 'string' },
                     { name: 'style', type: 'string' },
                     { name: 'calendar', type: 'string' },
@@ -79,21 +80,26 @@
                 },
                 view: 'weekView',
                 views:
-                [
-                    { type: "dayView", showWeekends: true, timeRuler: { scale: "quarterHour" } },
-                    { type: "weekView", showWeekends: true, timeRuler: { scale: "quarterHour" } }
-                ]
+                    [
+                        { type: "dayView", showWeekends: true, timeRuler: { scale: "quarterHour" } },
+                        { type: "weekView", showWeekends: true, timeRuler: { scale: "quarterHour" } },
+                        { type: "monthView", showWeekends: true, timeRuler: { scale: "quarterHour" } }
+                    ]
             });
         });
     </script>
 </head>
+
 <body class='default'>
     <a href="../../../../index.html">Back to Homepage</a>
     <div id="scheduler"></div>
 
 
-<div style="position: absolute; bottom: 5px; right: 5px;">
-<a href="https://www.jqwidgets.com/" alt="https://www.jqwidgets.com/"><img alt="https://www.jqwidgets.com/" title="https://www.jqwidgets.com/" src="https://www.jqwidgets.com/wp-content/design/i/logo-jqwidgets.png"/></a>
-</div>
+    <div style="position: absolute; bottom: 5px; right: 5px;">
+        <a href="https://www.jqwidgets.com/" alt="https://www.jqwidgets.com/"><img alt="https://www.jqwidgets.com/"
+                title="https://www.jqwidgets.com/"
+                src="https://www.jqwidgets.com/wp-content/design/i/logo-jqwidgets.png" /></a>
+    </div>
 </body>
+
 </html>
